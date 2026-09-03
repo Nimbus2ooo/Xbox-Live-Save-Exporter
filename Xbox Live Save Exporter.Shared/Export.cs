@@ -124,7 +124,7 @@ namespace Xbox_Live_Save_Exporter
                     for (int s = 0; s < containerFiles.Count; s++)
                     {
                         double Zl = (double)Yl / containerFiles.Count;
-                        double Zr = Zl * f + Yr;
+                        double Zr = Zl * s + Yr;
                         progres = Zr;
 
                         OnProgress?.Invoke(this, progres);
